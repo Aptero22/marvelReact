@@ -67,7 +67,7 @@ class CharList extends Component {
         this.itemRefs.push(ref);
     }
 
-    focusOnItem = (id) => {
+    focusOnItem = (id) => { //Функционал для выделения карточек при клике 
         this.itemRefs.forEach(item => item.classList.remove('char__item_selected'));
         this.itemRefs[id].classList.add('char__item_selected');
         this.itemRefs[id].focus();
